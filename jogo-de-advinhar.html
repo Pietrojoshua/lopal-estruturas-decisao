@@ -9,15 +9,21 @@
     <script>
 let numeroAleatorio = Math.random()*10;
 let numeroAleatorioInteiro = Math.round(numeroAleatorio)
-document.write (numeroAleatorioInteiro);
+//document.write (numeroAleatorioInteiro);
 
 let numero = prompt ("Advinhe o numero em que o computador esta pensando de 0 a 10")
 
-let cumprimento = (numeroAleatorioInteiro == numero) ?
-               "Voce acertou parabens": 
-
-               (numeroAleatorioInteiro == 0) ?
-                 "puts tu errou" :
+let resultado = (numero >=1 && numero <=10) ?
+                 (numero == numeroAleatorioInteiro) ?
+                 " Parabens! Voce acertou": 
+                 " Voce errou! o numero que pensei era" + numeroAleatorioInteiro + "! ": 
+                 " numero invalido."
+                 document.write(resultado)
+//if (numero == numeroAleatorioInteiro){
+    //document.write("Parabens! Voce acertou o numero certo")
+//}else{
+  //  document.write("Você errou! o numero q pensei era" + numeroAleatorioInteiro)
+//}
         
     </script>
 
